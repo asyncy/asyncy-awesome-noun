@@ -1,7 +1,10 @@
 # -*- coding: utf-8 -*-
-
-import sys
 from random import random
+
+from flask import Flask, make_response, request
+
+
+app = Flask(__name__)
 
 
 first = [
@@ -21,6 +24,7 @@ first = [
     'upbeat', 'vibrant', 'vigilant', 'vigorous', 'wizardly', 'wonderful',
     'xenodochial', 'youthful', 'zealous', 'zen'
 ]
+
 
 second = [
     'albattani', 'allen', 'almeida', 'antonelli', 'agnesi', 'archimedes',
@@ -61,6 +65,7 @@ second = [
 ]
 
 
+@app.route('/')
 def generate():
     return '-'.join((
         first[int(round(random() * 91))],
@@ -68,5 +73,6 @@ def generate():
         str(int(random() * 100000))
     ))
 
+
 if __name__ == '__main__':
-    sys.stdout.write(generate())
+    app.run(host='0.0.0.0', port=8000)

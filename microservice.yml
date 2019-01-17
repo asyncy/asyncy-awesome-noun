@@ -1,0 +1,14 @@
+omg: 1
+lifecycle:
+  startup:
+    command: ["python", "/app/app.py"]
+actions:
+  id:
+    help: |
+      Generate an awesome id. It is really cool.
+    http:
+      path: /
+      method: get
+      port: 8000
+    output:
+      type: string
