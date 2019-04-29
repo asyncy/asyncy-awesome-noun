@@ -72,7 +72,9 @@ def generate():
         random.choice(second),
         f"{random.randint(0, 9999):04}"
     )
-    return '-'.join(parts)
+    s = '-'.join(parts)
+    print(f"Generated: {s!r}.")
+    return s
 
 
 if __name__ == '__main__':
