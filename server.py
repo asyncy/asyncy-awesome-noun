@@ -78,4 +78,5 @@ def generate():
 
 
 if __name__ == '__main__':
+    print('Listening on port 8000…')
     waitress.serve(app, listen="*:8000")
