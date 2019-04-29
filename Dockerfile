@@ -1,10 +1,5 @@
-FROM        python:3.7-alpine
+from kennethreitz/pipenv
 
-ENV         PYTHONHASHSEED random
+COPY . /app
 
-RUN         mkdir /app
-ADD         requirements.txt /app
-RUN         pip install -r /app/requirements.txt
-ADD         server.py /app
-
-CMD         ["python", "/app/server.py"]
+CMD python3 server.py
