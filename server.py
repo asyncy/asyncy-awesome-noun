@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-from random import random
-
+import random
 from flask import Flask, make_response, request
 
 
@@ -67,11 +66,12 @@ second = [
 
 @app.route('/')
 def generate():
-    return '-'.join((
-        first[int(round(random() * 91))],
-        second[int(round(random() * 230))],
-        str(int(random() * 100000))
-    ))
+    parts = (
+        random.choice(first),
+        random.choice(second),
+        f"{random.randint(0, 9999):04}"
+    )
+    return '-'.join(parts)
 
 
 if __name__ == '__main__':
