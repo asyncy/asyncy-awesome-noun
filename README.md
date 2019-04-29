@@ -10,4 +10,6 @@
 flamboyant-einstein-0101
 ```
 
+Curious to [learn more](https://docs.storyscript.io/)?
+
 ✨🍰✨
