@@ -7,4 +7,4 @@ ADD         requirements.txt /app
 RUN         pip install -r /app/requirements.txt
 ADD         server.py /app
 
-ENTRYPOINT  ["python", "/app/server.py"]
+CMD         ["python", "/app/server.py"]
