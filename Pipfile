@@ -13,4 +13,4 @@ waitress = "*"
 python_version = "3.7"
 
 [scripts]
-web = "python -m waitress server:app"
+web = "python server.py"
