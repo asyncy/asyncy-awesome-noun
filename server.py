@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-from random import random
-
+import random
+import waitress
 from flask import Flask, make_response, request
 
 
@@ -67,12 +67,16 @@ second = [
 
 @app.route('/')
 def generate():
-    return '-'.join((
-        first[int(round(random() * 91))],
-        second[int(round(random() * 230))],
-        str(int(random() * 100000))
-    ))
+    parts = (
+        random.choice(first),
+        random.choice(second),
+        f"{random.randint(0, 9999):04}"
+    )
+    s = '-'.join(parts)
+    print(f"Generated: {s!r}.")
+    return s
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8000)
+    print('Listening on port 8000…')
+    waitress.serve(app, listen="*:8000")
