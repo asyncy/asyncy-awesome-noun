@@ -1,4 +1,6 @@
-from kennethreitz/pipenv
+FROM kennethreitz/pipenv
+
+ENV PYTHONHASHSEED random
 
 COPY . /app
 
