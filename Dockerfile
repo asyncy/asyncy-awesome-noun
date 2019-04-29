@@ -1,8 +1,8 @@
-FROM kennethreitz/pipenv
+FROM        python:3.7-alpine
 
-# Copy the application into the container.
-COPY Pipfile Pipfile.lock server.py /app/
+RUN         mkdir /app
+ADD         requirements.txt /app
+RUN         pip install -r /app/requirements.txt
+ADD         server.py /app
 
-# Boot up the service.
-CMD python3 server.py
-EXPOSE 8000
+ENTRYPOINT  ["python", "/app/server.py"]
