@@ -1,8 +1,7 @@
-FROM        python:3.7-alpine
+FROM kennethreitz/pipenv
 
-RUN         mkdir /app
-ADD         requirements.txt /app
-RUN         pip install -r /app/requirements.txt
-ADD         app.py /app
+# Copy the application into the container.
+COPY . /app
 
-ENTRYPOINT  ["python", "/app/app.py"]
+# Boot up the service.
+CMD python -m waitress server:app
