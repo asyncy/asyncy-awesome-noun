@@ -1,7 +1,7 @@
 omg: 1
 lifecycle:
   startup:
-    command: ["python3", "/app/server.py"]
+    command: ["python", "/app/server.py"]
 actions:
   id:
     help: |
