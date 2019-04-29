@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import random
+import waitress
 from flask import Flask, make_response, request
 
 
@@ -75,4 +76,4 @@ def generate():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8000)
+    waitress.serve(app, listen="*:8000")
