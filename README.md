@@ -8,7 +8,7 @@ Create Random Awesome Stuff!
 ## Direct usage in [Storyscript](https://storyscript.io/):
 
 ```coffee
->>> (random/awesome id)
+>>> awesome id
 flamboyant-einstein-0101
 ```
 
