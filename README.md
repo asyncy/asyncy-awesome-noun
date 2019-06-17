@@ -1,6 +1,6 @@
 # _Awesome_ OMG Microservice
 
-![Microservice](https://img.shields.io/badge/microservice-ready-brightgreen.svg?style=for-the-badge)
+[![Open Microservice Guide](https://img.shields.io/badge/OMG%20Enabled-👍-green.svg?)](https://microservice.guide)
 [![Docker Build Status](https://img.shields.io/docker/build/microservices/awesome.svg?style=for-the-badge)](https://hub.docker.com/r/microservices/awesome/)
 
 Create Random Awesome Stuff!
