@@ -1,6 +1,6 @@
-# _Awesome_ OMG Microservice
+# _Awesome_ OMS Microservice
 
-[![Open Microservice Guide](https://img.shields.io/badge/OMG%20Enabled-👍-green.svg?)](https://microservice.guide)
+[![Open Microservices](https://img.shields.io/badge/OMS%20Enabled-👍-green.svg?)](https://openmicroservices.org)
 [![Docker Build Status](https://img.shields.io/docker/build/microservices/awesome.svg?style=for-the-badge)](https://hub.docker.com/r/microservices/awesome/)
 
 Create Random Awesome Stuff!
@@ -16,13 +16,13 @@ Curious to [learn more](https://docs.storyscript.io/)?
 
 ✨🍰✨
 
-## Usage with [OMG CLI](https://www.npmjs.com/package/omg)
+## Usage with [OMS CLI](https://www.npmjs.com/package/@microservices/oms)
 ##### Awesome ID
 ```shell
-$ omg run id
+$ oms run id
 ```
 
-**Note**: the OMG CLI requires [Docker](https://docs.docker.com/install/) to be installed.
+**Note**: the OMS CLI requires [Docker](https://docs.docker.com/install/) to be installed.
 
 ## License
-[MIT License](https://github.com/omg-services/awesome/blob/master/LICENSE).
+[MIT License](https://github.com/oms-services/awesome/blob/master/LICENSE).
