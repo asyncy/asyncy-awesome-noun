@@ -1,14 +1,20 @@
-omg: 1
-lifecycle:
-  startup:
-    command: ["python3", "/app/server.py"]
+oms: 1
 info:
   version: 1.0.0
   title: Awesome
   description: This is a awesome service
   license:
     name: MIT
-    url: https://opensource.org/licenses/MIT
+    url: 'https://opensource.org/licenses/MIT'
+  contact:
+    name: Open Microservices
+    url: 'https://openmicroservices.org'
+    email: core@openmicroservices.org
+lifecycle:
+  startup:
+    command:
+      - python3
+      - /app/server.py
 actions:
   id:
     help: |
